@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  form{
+    margin-top: 25px;    margin-left: 15px;
+    text-align: center;
+    border: 1px solid black;
+    height:190px;
+    width:350px;
+    
+    background-color: green;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdzVaI8y8akNoiYuQL3XE4zAVh_Pg9xfLGIQ&usqp=CAU" );
+  }
+  #soumya{
+    display: inline;
+    margin: 10px;
+    border:1px solid black; 
+    height: 25px;
+    border-radius: 20px;
+    margin-left: 15px;
+  }
+#me3{ display: inline; margin: 10px;
+  border:1px solid black;
+  height: 25px;
+  border-radius: 20px;    margin-left: 15px;
+}
+
+
+   button{
+    display: inline; margin: 15px;
+    border:1px solid black;
+    height: 30px;
+    width: 150px;
+    background-color: green;
+    color: 2px solid black;
+    border-radius: 20px;
+   }
+   #paul{
+    display: inline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   text-align: center;
+   background-color: greenyellow;
+   border: 1px solid black;
+   }
+  
+  
+</style>
+<body>
+ 
+    <script type= "text/javascript">
+function login() {
+var user = document.getElementById("soumya").value;
+var pass = document.getElementById("me3").value;
+if(user == "soumyajitpaul" && pass == "lab18") {
+    alert("Logged In");
+    window.location.assign("soumya.html")
+    return false;
+} else {
+    alert("invalid username/password");
+    return false;
+    }
+}
+</script>
+   
+   </script>
+
+    <form >
+   <H2 id="paul" style="color: black;">WASTE MANAGEMENT </H2>
+   <br>
+    <input type="text" id="soumya" placeholder="user name">
+    <br>
+    <input type="text" id="me3" placeholder="password">
+    <br>
+    
+    <button type="button" onclick="login()" >login!</button>
+    
+    
+
+  </form>
+   
+</body>
+</html>
